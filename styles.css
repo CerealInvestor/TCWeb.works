@@ -1,0 +1,808 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: "Open Sans", sans-serif;
+	color: #0268c3;
+	font-size: 1.1em;
+	line-height: 1.5;
+	text-align: center;
+	background-color: #000000;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0 0 1em 0;
+}
+
+p {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+/* Only for content UL */
+.content-wrapper ul {
+	padding-left: 3em;
+}
+
+a {
+	text-decoration: none;
+	color: #0268c3;
+}
+
+a:hover {
+	color: #EA4C29;
+}
+
+#section-d a {
+	color: #EA4C29;
+}
+
+#section-d a:hover {
+	color: #0268c3;
+}
+
+.bold { 
+	font-size: 1.2em;
+	font-weight: bold; 
+	color: #EA4C29;
+}
+
+.brand-color {
+	color: #EA4C29;
+}
+
+button {
+	background-color: #0268c3;
+	color: #FFFFFF;
+	font-weight: bold;
+	border: 0;
+	text-transform: uppercase;
+	border: 1px solid #FFFFFF;
+	width: 100%;
+	padding: 1em;
+}
+
+button:hover, .contact button:focus {
+	background: #EA4C29;
+	color: #FFFFFF;
+	outline: 0;
+	transition: background-color 1s ease-out;
+	border: 1px solid #0268c3;
+} 
+
+.border-bottom {
+	border-bottom: 5px solid #0268c3;
+}
+
+.border-top {
+	border-top: 5px solid #0268c3;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-auto-rows: minmax(100px, auto);
+	justify-items: stretch;
+}
+
+/* Header */
+
+#header {
+	grid-column: 1/4;
+	text-align: center;
+	border-bottom: 5px solid #0268c3;
+	display: flex; 
+	justify-content: center;
+	background-color: #FFFFFF;
+}
+
+/* Logo */
+/* Flex used to centre image */
+.logo {
+	text-align: center;
+}
+.logo img {
+	width: 60%;
+}
+
+.logo-quote {
+	text-align: left; 
+	color: #EA4C29; 
+	font-size: 0.9em; 
+	font-weight: bold;
+}
+
+.quote {
+	display: none;
+}
+
+/* Telephone 
+.telephone-container {
+	display: none;
+}*/
+
+
+/* Navigation */
+/* Removing navigation height which is added */
+nav {
+	height: 0px;
+}
+
+.navigation {
+    grid-column: 1/4;
+	width: 100%;
+	background-color: #0268c3;
+	padding: 0.2em 0 0 0;
+}
+
+.navigation div {
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+
+.navigation div .drop-down {
+	display: none;
+}
+
+.navigation a {
+	color: #FFFFFF;
+}
+
+.navigation a:hover {
+	color: #EA4C29;
+}
+
+.navigation li {
+  	display: inline-block;
+  	position: relative;
+  	text-decoration: none;
+  	transition-duration: 0.5s;
+  	padding: 0.5em;
+}
+  
+
+.navigation li a {
+  	color: #fff;
+}
+
+.navigation li:hover,
+.navigation li:focus-within {
+  background-color: #0268c3;
+  cursor: pointer;
+}
+
+.navigation li:focus-within a {
+  outline: none;
+}
+
+.navigation ul li ul {
+	z-index:100;
+	background-color: #0268c3;
+  	visibility: hidden;
+  	opacity: 0;
+  	min-width: 12em;
+  	position: absolute;
+  	transition: all 0.5s ease;
+  	margin-top: 0.5em;
+  	left: 0;
+  	display: none;
+  	text-align: left;
+}
+
+/* The hover dropdown list items*/
+.navigation ul li:hover > ul,
+.navigation ul li:focus-within > ul,
+.navigation ul li ul:hover,
+.navigation ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+.navigation ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+
+/* Style the navigation menu */
+#menuToggle
+{
+  position: relative;
+  top: 0.5em;
+  left: 0.2em;
+  
+  z-index: 101;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #FFFFFF;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  margin-right: 20px;
+  padding-right: 20px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #0268c3;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #FFFFFF;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  width: 100%;
+  height: 520px;
+  margin: -63px 0 0 -5px;
+  padding: 50px;
+  padding-top: 20px;  
+  background: #0268c3;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+	margin: 0 0 0 40px;
+  	padding: 10px 0;
+  	font-size: 22px;
+  	text-align: left;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+/* cAROUSEL */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%; 
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+	height: 300px;
+	object-fit: contain;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #0268c3;
+  font-size: 1.4em;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.text a {
+	font-size: 0.5em;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* Header Showcase */
+
+#showcase {
+  min-height: 250px;
+  color: #fff;
+  text-align: center;
+  /*border-top: 10px solid #0268c3;*/ 
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: #0268c3
+    url("../images/home1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#showcase h1 {
+  padding-top: 2em;
+  padding-bottom: 0;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+  text-align: center;
+}
+
+#showcase .content-wrap h1 {
+	font-size: 1.5em;
+	color: #333;
+	margin: 0 0 1.5em 0;
+}
+
+#showcase button {
+	display: block;
+	margin: 0 auto;
+}
+
+
+/* Section B*/
+#section-b, #section-d {
+	grid-column: 1/4;
+	background: #333333;
+	color: #FFF;
+	padding: 0;
+	border-top: 5px solid #0268c3;
+	border-bottom: 5px solid #0268c3;
+}
+
+#section-d {
+	border-top: none;
+}
+
+#section-b .content-wrapper img {
+	margin: 0 auto;
+	padding: 1em 0;
+	width: auto;
+	height: 100px;
+}
+
+.content-images-inline img {
+	display: inline-block;
+}
+
+.content-images-inline img:nth-child(2) {
+	margin: 0 15px 20px !important;
+	width: 60px !important;
+	height: auto !important
+}
+
+.quote {
+	font-size: 0.8em;
+}
+
+
+/* Section C */
+.wrapper #section-c, #section-e {
+	grid-column: 1/4;
+	background-color: #FFFFFF;
+}
+
+
+.content-wrapper {
+	padding: 1em 0;
+}
+
+.content-wrapper p {
+	padding: 0;
+}
+
+/* Section A */
+#section-a, .slideshow-container, #section-c {
+	background-color: #FFFFFF;
+}
+
+/* Section C */
+
+#section-c,  #section-e {
+  padding: 2em 1em 1em;
+}
+
+#section-c ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-c li {
+  background: #fff;
+  color: #333;
+}
+
+.card-title {
+	color: #0268c3;
+}
+
+.card-content {
+  padding: 1em 1em 0 1em;
+}
+
+/* Contact */
+.contact {
+
+}
+
+.contact form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 15px;
+}
+
+.contact form label {
+	display: block;
+	text-align: left;
+	padding: 0 0 0.2em 0;
+}
+
+.contact form p {
+	margin: 0;
+}
+
+.contact form .full {
+	grid-column: 1/3;
+}
+
+.contact form .third {
+	grid-column: 1/3;
+}
+
+.contact form button, .contact form input, .contact form textarea, .contact form select {
+	width: 100%;
+	padding: 1em;
+	font-family: "Open Sans", sans-serif;
+}
+
+/* Footer */
+footer {
+	background-color: #000;
+	padding: 2em 0;
+	color: #FFF;
+	grid-column: 1/4;
+	min-height: 5em;
+}
+
+footer div {
+	grid-column: span 2;
+}
+
+.footer-socials {
+
+}
+
+.footer-socials div {
+
+}
+
+.footer-socials img {
+	width: 2em;
+}
+
+/* Media Queries */
+@media( min-width: 800px) {
+
+	/* Logo */
+	#header {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		/* border-bottom: 5px solid #0268c3; */
+	}
+
+	.logo {
+		grid-column: 1 / 1;
+  		grid-row: 1;
+  		padding: 1em 1em 0 1em;
+  	
+	}
+	.logo img {
+		width: 260px;
+		object-fit: contain;
+	}
+
+	.quote {
+		display: grid;
+		grid-column: 2 / 3;
+		padding: 1em 1em 0 1em;
+	}
+
+	.quote img {
+
+	}
+
+	#header .login {
+		grid-column: 3 / 3;
+		padding: 1em 1em 0 1em;
+		text-align: right;
+	}
+
+	#header .login img {
+		display: inline-block;
+		width: 30px;
+	}
+
+	/* Telephone */
+	.telephone-container {
+		max-width: 320px;
+		margin: 0 auto;
+		display: flex;
+	  	flex-wrap: wrap;
+	  	justify-content: space-between;
+	}
+
+	.telephone-container div {
+		width: 15%;
+		margin-bottom: 2%; /* (100-32*3)/2 */
+	}
+
+	.telephone-container div:nth-child(1), 
+	.telephone-container div:nth-child(3){
+		margin-top: 10px;
+	}
+
+	.telephone-container div:nth-child(2){
+		width: 70%;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+	}
+
+	#menuToggle {
+		display: none;
+	}
+
+	.content-wrapper, .content-wrap, #section-c, #section-e {
+		grid-column: 2/4;
+		text-align: left;
+	}
+
+	#section-c ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#section-c li {
+		width: 31%;
+	}
+
+	.card div {
+	}
+
+	.card img {
+		height: 250px;
+      	object-fit: contain;
+	}
+
+
+	/* Contact Form ERROR */
+	.contact form .third {
+		grid-column: 0/1;
+	}
+
+	/* footer desktop */
+	.footer-socials div {
+		display: inline-block;
+		width: 2em;
+	}
+
+}
+
+@media screen and (max-width: 799px) {
+
+	/* Logo */
+	#header {
+
+	}
+
+	.logo {
+		max-width: 260px;
+	}
+
+	.logo img {
+		width: 100%;
+		object-fit: contain;
+	}
+
+	.logo-quote {
+		text-align: center;
+		margin: 0 0 0.5em 0;
+	}
+
+	.navigation {
+		display: none;
+	}
+
+	#header .quote, #header .login {
+		display: none;
+	}
+
+
+	#section-d .content-wrapper {
+		padding: 1em;
+	}
+
+
+	/* Mobile footer */
+	.footer-socials div {
+		/* ERROR */
+		/* grid-template-columns: 1fr; */
+		display: inline-block;
+		padding: 1.5em 0 0 0;
+	}
+}
+

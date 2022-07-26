@@ -1,0 +1,16 @@
+[13-Jan-2022 17:37:37 UTC] PHP Notice:  Undefined index: firstname in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 5
+[13-Jan-2022 17:37:37 UTC] PHP Notice:  Undefined index: lastname in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 6
+[13-Jan-2022 17:37:37 UTC] PHP Notice:  Undefined index: telephone in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 7
+[13-Jan-2022 17:37:37 UTC] PHP Notice:  Undefined index: reason in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 8
+[13-Jan-2022 17:37:37 UTC] PHP Notice:  Undefined index: link in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 9
+[13-Jan-2022 17:37:37 UTC] PHP Notice:  Undefined index: email in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 11
+[13-Jan-2022 17:37:37 UTC] PHP Notice:  Undefined index: confirmemail in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 12
+[13-Jan-2022 17:37:37 UTC] PHP Notice:  Undefined index: message in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 14
+[19-Jan-2022 16:38:15 UTC] PHP Notice:  Undefined index: firstname in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 5
+[19-Jan-2022 16:38:15 UTC] PHP Notice:  Undefined index: lastname in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 6
+[19-Jan-2022 16:38:15 UTC] PHP Notice:  Undefined index: telephone in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 7
+[19-Jan-2022 16:38:15 UTC] PHP Notice:  Undefined index: reason in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 8
+[19-Jan-2022 16:38:15 UTC] PHP Notice:  Undefined index: link in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 9
+[19-Jan-2022 16:38:15 UTC] PHP Notice:  Undefined index: email in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 11
+[19-Jan-2022 16:38:15 UTC] PHP Notice:  Undefined index: confirmemail in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 12
+[19-Jan-2022 16:38:15 UTC] PHP Notice:  Undefined index: message in /home/fggvm28ogxls/public_html/includes/quotemail.php on line 14

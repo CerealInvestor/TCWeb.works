@@ -1,0 +1,16 @@
+[12-Oct-2021 16:16:50 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 16:16:58 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 16:17:37 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 16:17:39 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 16:17:43 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 16:19:01 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 16:57:16 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 16:57:18 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 16:58:07 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 16:58:09 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 17:00:39 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 17:01:20 UTC] PHP Warning:  include(/config/config.php): failed to open stream: No such file or directory in /home/fggvm28ogxls/public_html/index.php on line 1
+[12-Oct-2021 17:01:20 UTC] PHP Warning:  include(): Failed opening '/config/config.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/fggvm28ogxls/public_html/index.php on line 1
+[20-Oct-2021 21:04:40 UTC] PHP Warning:  include(home.php): failed to open stream: No such file or directory in /home/fggvm28ogxls/public_html/index.php on line 32
+[20-Oct-2021 21:04:40 UTC] PHP Warning:  include(home.php): failed to open stream: No such file or directory in /home/fggvm28ogxls/public_html/index.php on line 32
+[20-Oct-2021 21:04:40 UTC] PHP Warning:  include(): Failed opening 'home.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/fggvm28ogxls/public_html/index.php on line 32

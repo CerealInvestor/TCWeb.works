@@ -1,0 +1,4 @@
+[08-Dec-2021 15:44:20 UTC] PHP Notice:  Undefined index: setup_db_collation in /home/fggvm28ogxls/public_html/crm/install/install_utils.php on line 794
+[08-Dec-2021 15:44:20 UTC] PHP Notice:  Undefined index: setup_db_charset in /home/fggvm28ogxls/public_html/crm/install/install_utils.php on line 795
+[08-Dec-2021 15:44:24 UTC] PHP Notice:  Undefined index: scenarios in /home/fggvm28ogxls/public_html/crm/install/performSetup.php on line 532
+[08-Dec-2021 15:44:26 UTC] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/fggvm28ogxls/public_html/crm/jssource/Minifier.php on line 240
